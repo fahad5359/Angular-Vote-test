@@ -1,0 +1,13 @@
+.bakgrndd{
+
+  /*height: 200px;*/
+}
+.bakgrndd:hover{
+width: 100px;
+  margin: auto;
+  background: #52675e;
+  transition: background-color 0.4s ease;
+  border-radius:15px ;
+  color: #ffffff;
+}
+

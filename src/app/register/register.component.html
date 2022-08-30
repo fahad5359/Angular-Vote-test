@@ -1,1 +1,19 @@
 <p>register works!</p>
+<form [formGroup]="myForm" (ngSubmit)="onSubmitForm()" class="container form-control">
+  <p class="text-sm-end" [style.color]="red" *ngIf="errorHandle">↑ Please Check all The fields </p>
+  <div formGroupName="userGroup" class="col-lg-2">
+    <div formArrayName="UserInfo" class="">
+      <label for="firstNem">First name</label>
+      <input type="text" id="firstNem" formControlName="0">
+      <label for="lastNem">last name</label>
+      <input type="text" id="lastNem" formControlName="1">
+    </div>
+    <label for="username" [style.background-color]="Coolor">UserName</label>
+    <input type="text" id="username" formControlName="userNem">
+    <label for="Email" type="email" class="col-form-label">Email</label>
+    <input type="text" id="Email" formControlName="Email">
+    <button class="btn-primary  ">Submit</button>
+  </div>
+</form>
+
+

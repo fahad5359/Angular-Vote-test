@@ -1,0 +1,9 @@
+.backgroundd{
+  border: red;
+}
+.backgroundd:hover{
+  background: #d0d0d0;
+  border-radius: 5px;
+  stroke-opacity: 10;
+}
+
